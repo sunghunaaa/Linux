@@ -1,0 +1,46 @@
+# c언어 complie하기
+$vi a.c
+======================================================
+#include <stdio.h>
+int main(void)
+{
+    puts("\n Hi everyone! \n");
+    printf(" \t Have a nice day *** \n");
+    return 0;
+}
+======================================================
+$gcc a.c -o a # 컴파일
+$./a # 출력됨
+
+
+# c++ complie하기
+$vi aa.cpp
+======================================================
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+    cout << "Hello C++" << endl;
+    return 0;
+} 
+======================================================
+$g++ -o aa aa.cpp# 컴파일
+$./aa출력됨
+
+
+# java complie하기
+$vi j.java
+======================================================
+public class j {
+       static public void main(String[] str) {
+              System.out.println("\n 안녕 자바 \n");
+     }
+} 
+======================================================
+$javac j.java# 컴파일
+$java j출력됨
+
+
+
+
