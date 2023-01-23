@@ -11,3 +11,21 @@ https://investechnews.com/2021/06/15/mac-putty-install-error/
  매우매우매우 오래 걸림
 4. cp /opt/local/bin/putty ~/Desktop/PuTTY
  putty 바로가기 설치
+5. putty error
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+_________-ui-MacBookAir:~ _________$ /Users/byunsunghun/Desktop/PuTTY ; exit;
+
+(PuTTY:47731): Gtk-WARNING **: 02:21:40.878: cannot open display: 
+logout
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[프로세스 완료됨]
+
+-> https://www.xquartz.org/ 설치
+
