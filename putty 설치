@@ -1,0 +1,13 @@
+https://investechnews.com/2021/06/15/mac-putty-install-error/
+
+
+<macport 설치>
+1. https://www.macports.org/install.php 접속 후 자신의 mac os 버전에 맞는 macport를 다운로드합니다.
+1-1. 자신의 mac os버전 설정 들어가서 확인.
+2. 설치 후 $ sudo port -v selfupdate 
+2-1. sudo: port: command not found 오류 뜨면
+2-2. $ sudo /opt/local/bin/port install subversion 입력 후 다시 시도
+3. $ sudo port install putty
+ 매우매우매우 오래 걸림
+4. cp /opt/local/bin/putty ~/Desktop/PuTTY
+ putty 바로가기 설치
