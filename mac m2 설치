@@ -1,0 +1,28 @@
+https://www.youtube.com/watch?v=O19mv1pe76M&t=211s
+
+virtual machines
+-https://mac.getutm.app/ 다운로드
+
+ubuntu
+-https://ubuntu.com/download/server/arm
+-Download Ubuntu 22.10 다운로드
+
+UTM
+<start>
+Virtualize
+Linux 선택
+<linux>
+Boot ISO Image - ubuntu 설정 
+<hardware>
+memory - 2048MB
+cpu - 4core
+<storage>
+30GB
+<shared directory>
+browse-downloads
+<summary>
+name - _____
+
+시작 버튼 누르기
+custom storage layout 설정
+install openssh server 선택
