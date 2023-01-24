@@ -1,0 +1,53 @@
+https://coding-factory.tistory.com/category/OS/Linux?page=1
+
+#cp + option
+
+<cp>
+
+cp의 뜻은 copy의 줄임말로 파일이나 디렉토리를 복사할 때 사용하는 명령어입니다.
+-> cp [옵션][복사 할 디렉토리/파일][복사 될 디렉토리/파일]
+
+현재 디렉토리에 있는 test.txt 파일을 new_test.txt라는 이름으로 현 위치에 복사
+ex) cp test.txt new_test.txt
+
+/user/jtaewu 경로의 test.txt 파일을 new_test.txt라는 이름으로 현재 위치에 복사
+ex) cp /user/jtaewu/test.txt new_test.txt
+
+/user/jtaewu 경로의 test.txt 파일을 new_test.txt라는 이름으로 /user/guest에 복사
+ex) cp /user/jtaewu/test.txt /user/guest/new_test.txt
+
+1. cp 명령어의 옵션을 제외한 인자 값은 생략이 불가능합니다.
+2. 경로를 지정하지 않으면 현 위치를 Defualt로 합니다.
+3. 복사할 때 새로운 이름을 지정하여 복사할 수 있습니다.
+4. 다양한 옵션을 사용하여 기존의 파일이나 디렉토리를 보호하는 등의 행동을 취할 수 있습니다.
+
+<디렉토리 복사 방법>
+
+-> cp -r [복사할 디렉토리명] [복사될 디렉토리명]
+
+현재 위치에 있는 org_folder 디렉토리를 new_folder 디렉토리라는 이름으로 복사
+ex) cp -r org_folder new_folder
+
+디렉토리를 복사하고 싶다면 위와 같이 -r 옵션을 사용하여 복사하면 됩니다.
+
+<여러개를 한번에 복사하고 싶을 때>
+
+cp [복사 대상1] [복사 대상2] [복사 대상3] ..... [복사 될 경로]
+ex) cp test1.txt test2.txt test3.txt /user/jtaewu
+
+현재 위치에 있는 모든 파일 복사
+cp * [복사 될 경로]
+ex) : cp * /user/jtaewu
+
+
+위와 같이 한번의 명령어로 여러개의 파일을 한번에 복사할 수도 있고 * 을 활용하여 디렉토리 안에 있는 파일들을 한번에 복사할수도 있습니다. 단 * 로 복사하였을 경우 숨김 파일들은 복사가 안됩니다.
+
+<option>
+
+- i : 복사될 파일이 이름이 이미 존재할 경우, 사용자에게 덮어 쓰기 여부를 묻습니다.
+- b : 복사될 파일이 이름이 이미 존재할 경우, 백업파일을 생성합니다.
+- f : 복사 될 파일이 이름이 이미 존재 할 경우, 강제로 덮어쓰기 합니다.
+- r : 하위 디렉토리 까지 모두 복사합니다.
+- a : 원본 파일의 속성, 링크 정보까지 모두 복사합니다.
+- p : 원본 파일의 소유자, 그룹, 권한 등의 정보까지 모두 복사합니다.
+- v : 복사 진행 상태를 출력합니다.
